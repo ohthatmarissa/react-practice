@@ -2,6 +2,7 @@ import React from 'react';
 import ContactForm from './ContactForm';
 import About from './about';
 import Header from './Header';
+import Error404 from './Error404';
 import { Switch, Route } from 'react-router-dom';
 import ProjectList from './ProjectList';
 
@@ -25,6 +26,7 @@ function App() {
         <Route exact path='/' component={ProjectList} />
         <Route path='/about' component={About} />
         <Route path='/contact' component={ContactForm} />
+        <Route component={Error404} />
       </Switch>
     </div>
   );

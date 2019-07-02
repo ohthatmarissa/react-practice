@@ -20,7 +20,7 @@ function ContactForm(){
         placeholder='Email'/>__
         <input
         id="what" 
-        placeholder='What\s Up'
+        placeholder="What's Up"
         cols="30" rows="10"></input>__
         <button type='submit'>Hey!</button>
     </form>
