@@ -1,9 +1,10 @@
 import React from 'react';
-import NewTicketForm from './NewTicketForm';
+import ContactForm from './ContactForm';
+import About from './about';
 import Header from './Header';
 import { Switch, Route } from 'react-router-dom';
-import TicketList from './TicketList';
-// import icecream1 from './assets/images/icecream1.jpg';
+import ProjectList from './ProjectList';
+
 
 
 function App() {
@@ -21,15 +22,12 @@ function App() {
         `}</style>
       <Header/>
       <Switch>
-        <Route exact path='/' component={TicketList} />
-        <Route path='/newticket' component={NewTicketForm} />
+        <Route exact path='/' component={ProjectList} />
+        <Route path='/about' component={About} />
+        <Route path='/contact' component={ContactForm} />
       </Switch>
     </div>
   );
 }
 
 export default App;
-
-// <div>
-//         <img src={icecream1} alt="ice cream"/>
-//     </div>

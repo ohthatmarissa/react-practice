@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function NewTicketForm(){
+function ContactForm(){
   return (
     <div>
         <style jsx global>{`
@@ -12,20 +12,24 @@ function NewTicketForm(){
     <form> 
         <input 
         type="text"
-        id='names'
-        placeholder='Pair Names'/>__
+        id='name'
+        placeholder='Name'/>__
         <input 
         type="text"
-        id='location'
-        placeholder='Location'/>__
+        id='email'
+        placeholder='Email'/>__
         <input
-        id="issue" 
-        placeholder='Describe your issue'
+        id="what" 
+        placeholder='What\s Up'
         cols="30" rows="10"></input>__
-        <button type='submit'>Help!</button>
+        <button type='submit'>Hey!</button>
     </form>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
 </div>
   );
 }
 
-export default NewTicketForm;
+export default ContactForm;
